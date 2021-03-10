@@ -8,9 +8,9 @@
       <ion-avatar>
         <ion-img style="width: auto; height: auto;" [src]="images.profile"></ion-img>
       </ion-avatar>
-      <div style="margin-top: 1rem;" id="sobreMi">
-        <h2 style="--color:var(--ion-text-color);">About Me</h2>
-        <p style="margin-bottom: 0.5rem!important;">I'm Armand, junior programmer. Among my knowledge, Front and BackEnd web development stands out. My current goals are AI, Android and Cybersecurity, among others.</p>
+      <div style="margin-top: 0.5rem;" id="sobreMi">
+        <h2 style="margin-top: 0;--color:var(--ion-text-color);">About Me</h2>
+        <p style="margin-bottom: 0.25rem!important;">Soy Armand, programador Junior. Entre mis conocimientos destaca el Front & BackEnd Web Development. Mis metas actuales son AI, Android y Ciberseguridad entre otros.</p>
       </div>
     </header>
     <div id="grid">
@@ -125,8 +125,8 @@
   </ion-grid>
 </div>
   <div id="info">
-    <ion-grid>
-      <ion-row><h2>Studies:</h2></ion-row>
+    <ion-grid id="studies">
+      <ion-row><h2>Estudios:</h2></ion-row>
       <ion-row>
         <h5> <b>· BackEnd Bootcamp en BitNetmind Academy (2021-2021)</b></h5><br>
         <h6>Curso de 229h. trabajando con técnicas Agile, en el que aprenderemos SQL, NoSQL, MySQL, MongoDB, Java, Maven, Spring Boot, JUnit i UML</h6>
@@ -137,32 +137,52 @@
       </ion-row>
       <ion-row>
         <h5><b>· Grado en Informatica UPC (2013-2018)</b><br></h5>
-        <h6>Estudios pendientes de finalizacion, actualmente pausados. La cantidad de creditos obtenidos es equivalente a la suma de 2 años del grado.</h6>
+        <h6>Estudios pendientes de finalizacion, actualmente pausados. La cantidad de créditos obtenidos es equivalente a la suma de 2 años del grado.</h6>
       </ion-row>
       <ion-row>
-        <h5><b>· Bachillerato Tecnologico (2011-2013)</b></h5>
+        <h5 style="margin-bottom:1.6rem"><b>· Bachillerato Tecnologico (2011-2013)</b></h5>
       </ion-row>
     </ion-grid>
-    <ion-grid id="others">
+
+    <ion-grid class="others">
+      <ion-row><h2>Experiencia: </h2></ion-row>
+      <ion-row>
+        <h5><b>· Desarrollador de aplicaciones multiplataforma en </b>Linucleus (2018-2019)</h5><br>
+        <p>A cargo del desarrollo usando <b>C++</b> y <b>AWS IoT Framework</b></p>
+        <h5><b>· Camarero/Pinche en bar/restaurante Cal Nen (2019-Actualidad)</b></h5>
+        <p>Trabajo en equipo, toma de comandas, contacto con el cliente, organización.</p>
+      </ion-row>
+
       <ion-row><h2>Soft Skills: </h2></ion-row>
-      <ion-row><h5>Proactivo</h5></ion-row>
-      <ion-row><h5>Mente Analitica</h5></ion-row>
-      <ion-row><h5>Sociable</h5></ion-row>
-      <ion-row><h5>Resolutivo</h5></ion-row>
-      <ion-row><h5>Flexible</h5></ion-row>
+      <ion-row><h6 class="soft">Proactivo</h6></ion-row>
+      <ion-row><h6 class="soft">Mente Analitica</h6></ion-row>
+      <ion-row><h6 class="soft">Sociable</h6></ion-row>
+      <ion-row><h6 class="soft">Resolutivo</h6></ion-row>
+      <ion-row><h6 class="soft">Flexible</h6></ion-row>
+
+      <ion-row><h2>Idiomas: </h2></ion-row>
+      <ion-row><h6 class="soft">Català: Natiu</h6></ion-row>
+      <ion-row><h6 class="soft">Castellano: Nativo</h6></ion-row>
+      <ion-row><h6 class="soft">Inglés: Nivel B2</h6></ion-row>
+
+      <ion-row>
+        <ion-col><h6 class="soft"><h4>Permiso: </h4>Tipo B con vehiculo propio.</h6></ion-col>
+        <ion-col><h6 class="soft"><h4>Disponibilidad: </h4>Total e inmediata.</h6></ion-col>
+      </ion-row>
     </ion-grid>
+
   </div>
   <ion-footer>
     <div class="link">
-      <a id="linked" href="https://www.linkedin.com/in/armand-carreras/"><img src="./linkedin.png"></a>
+      <a id="linked" href="https://www.linkedin.com/in/armand-carreras/"><img [src]="images.linked"></a>
       <label for="linked">armand_carreras</label>
   </div>
   <div class="link">
-      <a id="git" href="https://github.com/armand-carreras?tab=repositories"><img src="./github.jpg"></a>
+      <a id="git" href="https://github.com/armand-carreras?tab=repositories"><img [src]="images.github"></a>
       <label for="git">armand_carreras</label>
   </div>
  <div class="link">
-      <a id="mail" href='mailto:armand.fn.fal@gmail.com'><img src="./gmail.png"></a>
+      <a id="mail" href='mailto:armand.fn.fal@gmail.com'><img [src]="images.mail"></a>
       <label for="mail">armand.fn.fal@gmail.com</label>
  </div>
   </ion-footer>

@@ -23,7 +23,10 @@ export class CurriculumPage implements OnInit {
     npm:"https://raw.githubusercontent.com/armand-carreras/armandCarreras/master/src/assets/npm.png",
     mongo:"https://raw.githubusercontent.com/armand-carreras/armandCarreras/master/src/assets/mongodb.png",
     python:"https://raw.githubusercontent.com/armand-carreras/armandCarreras/master/src/assets/python.png",
-    git:"https://raw.githubusercontent.com/armand-carreras/armandCarreras/master/src/assets/Git_icon.png"
+    git:"https://raw.githubusercontent.com/armand-carreras/armandCarreras/master/src/assets/Git_icon.png",
+    linked:"https://raw.githubusercontent.com/armand-carreras/armandCarreras/master/src/assets/linkedin.png",
+    github:"https://raw.githubusercontent.com/armand-carreras/armandCarreras/master/src/assets/github.jpg",
+    mail:"https://raw.githubusercontent.com/armand-carreras/armandCarreras/master/src/assets/gmail.png"
   }
 
   toggleFlag=false;

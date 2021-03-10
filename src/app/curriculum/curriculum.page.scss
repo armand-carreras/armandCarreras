@@ -80,16 +80,47 @@ ion-grid{
   }
 }
 #info{
+  ion-grid{
+    height: 100%;
+  }
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
 
-  ion-grid{
+  #studies{
     margin: 0;
     background-color: rgba(123, 156, 193, 0.651);
     border-radius: 25px;
+
+    ion-row{
+      margin-left: 1rem;
+      *{
+        margin: 0;
+      }
+    }
+    h2{
+      text-decoration: underline;
+      margin-bottom:0.25rem!important;
+      margin-top: 0.75rem!important;
+    }
+    h5{
+      margin-left: 0.5!important;
+    }
+    h6{
+      margin-top: 0.25rem!important;
+      margin-bottom: 0.75rem!important;
+      margin-left: 1rem!important;
+    }
   }
+}
+
+.others{
+  height: 100%;
+  margin: 0;
+    background-color: rgba(123, 156, 193, 0.651);
+    border-radius: 25px;
+  margin-left: 0.25rem!important;
   ion-row{
     margin-left: 1rem;
     *{
@@ -97,24 +128,49 @@ ion-grid{
     }
   }
   h2{
-    margin-bottom: 1rem!important;
+    text-decoration: underline;
+    margin-bottom:0.25rem!important;
+    margin-top: 0!important;
+  }
+  h5{
+    margin-left: 0.5!important;
   }
   h6{
     margin-top: 0.25rem!important;
     margin-bottom: 0.75rem!important;
+    margin-left: 1rem!important;
+  }
+
+  .soft{
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    margin-left: 1rem!important;
+    h4{
+      text-decoration: underline;
+      margin: 0!important;
+      margin-top:0.25rem!important;
+    }
   }
 
 }
-#others{
-  margin-left: 0.25rem!important;
-  h2{
-    margin:0;
-    margin-bottom: 0.75;
-  }
-}
+
 ion-footer{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+
   background-color: rgba(123, 156, 193, 0.651);
   border-radius: 25px;
+  .link{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    width: 1.5rem;
+  }
 }
 @media only screen and (max-width: 600px){
   ion-avatar{
