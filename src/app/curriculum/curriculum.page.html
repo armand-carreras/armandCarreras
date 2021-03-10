@@ -1,32 +1,170 @@
-<header>
-  <ion-item id="toggle">
-    <ion-icon slot="start" name="moon"></ion-icon>
-    <ion-toggle (ionChange)="changeTheme($event)" id="themeToggle" ></ion-toggle>
-    <ion-icon slot="end" name="sunny"></ion-icon>
-  </ion-item>
-  <ion-avatar>
-    <ion-img style="width: auto; height: auto;" [src]="images.profile"></ion-img>
-  </ion-avatar>
-  <div style="margin-top: 1rem;" id="sobreMi">
-    <h2 style="--color:var(--ion-text-color);">About Me</h2>
-    <p style="margin-bottom: 0.5rem!important;">Soy Armand, programador Junior. Entre mis conocimientos destaca el FrontEnd y BackEnd Web Development. Mis metas actuales son AI, Android y Ciberseguridad entre otros.</p>
-  </div>
-</header>
-<ion-content>
-  <ion-grid>
+  <ion-content>
+    <header>
+      <ion-item id="toggle">
+        <ion-icon slot="start" name="moon"></ion-icon>
+        <ion-toggle (ionChange)="changeTheme($event)" id="themeToggle" ></ion-toggle>
+        <ion-icon slot="end" name="sunny"></ion-icon>
+      </ion-item>
+      <ion-avatar>
+        <ion-img style="width: auto; height: auto;" [src]="images.profile"></ion-img>
+      </ion-avatar>
+      <div style="margin-top: 1rem;" id="sobreMi">
+        <h2 style="--color:var(--ion-text-color);">About Me</h2>
+        <p style="margin-bottom: 0.5rem!important;">I'm Armand, junior programmer. Among my knowledge, Front and BackEnd web development stands out. My current goals are AI, Android and Cybersecurity, among others.</p>
+      </div>
+    </header>
+    <div id="grid">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-img [src]="images.html"></ion-img>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <ion-img [src]="images.css"></ion-img>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+            </div>
+      </ion-col>
+    </ion-row>
     <ion-row>
       <ion-col>
-        <ion-img [src]="images.html"></ion-img>
+        <ion-img [src]="images.js"></ion-img>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
         </div>
       </ion-col>
       <ion-col>
+        <ion-img [src]="images.angular"></ion-img>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
         </div>
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="images.ionic"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-img [src]="images.npm"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="images.firebase"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-img [src]="images.json"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="images.java"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-img [src]="images.aws"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="images.git"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-img [src]="images.cc"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="images.cccc"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 15%"></div>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-img [src]="images.mongo"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="justify-self: center;">
+        <ion-img [src]="images.python"></ion-img>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 15%"></div>
+        </div>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
   </ion-grid>
+</div>
+  <div id="info">
+    <ion-grid>
+      <ion-row><h2>Studies:</h2></ion-row>
+      <ion-row>
+        <h5> <b>· BackEnd Bootcamp en BitNetmind Academy (2021-2021)</b></h5><br>
+        <h6>Curso de 229h. trabajando con técnicas Agile, en el que aprenderemos SQL, NoSQL, MySQL, MongoDB, Java, Maven, Spring Boot, JUnit i UML</h6>
+      </ion-row>
+      <ion-row>
+        <h5><b>· FrontEnd Bootcamp en BitNetmind Academy (2020-2021)</b><br></h5>
+        <h6>Curso intensivo de tres meses, 490h trabajando con técnicas Agile, Trello, Git. Durante el curso he adquirido conocimientos tanto en HTML5 JS-ES6 CSS y Scss básicos y en frameworks como Ionic 5 y Angular10. Curso basado en aprendizaje autónomo.</h6>
+      </ion-row>
+      <ion-row>
+        <h5><b>· Grado en Informatica UPC (2013-2018)</b><br></h5>
+        <h6>Estudios pendientes de finalizacion, actualmente pausados. La cantidad de creditos obtenidos es equivalente a la suma de 2 años del grado.</h6>
+      </ion-row>
+      <ion-row>
+        <h5><b>· Bachillerato Tecnologico (2011-2013)</b></h5>
+      </ion-row>
+    </ion-grid>
+    <ion-grid id="others">
+      <ion-row><h2>Soft Skills: </h2></ion-row>
+      <ion-row><h5>Proactivo</h5></ion-row>
+      <ion-row><h5>Mente Analitica</h5></ion-row>
+      <ion-row><h5>Sociable</h5></ion-row>
+      <ion-row><h5>Resolutivo</h5></ion-row>
+      <ion-row><h5>Flexible</h5></ion-row>
+    </ion-grid>
+  </div>
+  <ion-footer>
+    <div class="link">
+      <a id="linked" href="https://www.linkedin.com/in/armand-carreras/"><img src="./linkedin.png"></a>
+      <label for="linked">armand_carreras</label>
+  </div>
+  <div class="link">
+      <a id="git" href="https://github.com/armand-carreras?tab=repositories"><img src="./github.jpg"></a>
+      <label for="git">armand_carreras</label>
+  </div>
+ <div class="link">
+      <a id="mail" href='mailto:armand.fn.fal@gmail.com'><img src="./gmail.png"></a>
+      <label for="mail">armand.fn.fal@gmail.com</label>
+ </div>
+  </ion-footer>
 </ion-content>
 

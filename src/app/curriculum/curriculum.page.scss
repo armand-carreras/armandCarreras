@@ -12,7 +12,7 @@ header{
     border-bottom-right-radius: 20px;
 }
 ion-avatar{
-  width: 250px;
+  width: 175px;
   height: auto;
 }
 #toggle{
@@ -54,9 +54,81 @@ ion-avatar{
       color: var(--ion-text-color);
     }
 }
+.progress{
+  width: 85%;
+}
+#grid{
+  border-radius: 25px;
+  background-color: rgba(123, 156, 193, 0.651);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+ion-grid{
+  margin-left: 0.5rem;
+  ion-col{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  ion-img{
+    margin-right: 0.5rem;
+    width: 2rem;
+  }
+}
+#info{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+
+  ion-grid{
+    margin: 0;
+    background-color: rgba(123, 156, 193, 0.651);
+    border-radius: 25px;
+  }
+  ion-row{
+    margin-left: 1rem;
+    *{
+      margin: 0;
+    }
+  }
+  h2{
+    margin-bottom: 1rem!important;
+  }
+  h6{
+    margin-top: 0.25rem!important;
+    margin-bottom: 0.75rem!important;
+  }
+
+}
+#others{
+  margin-left: 0.25rem!important;
+  h2{
+    margin:0;
+    margin-bottom: 0.75;
+  }
+}
+ion-footer{
+  background-color: rgba(123, 156, 193, 0.651);
+  border-radius: 25px;
+}
 @media only screen and (max-width: 600px){
   ion-avatar{
     width: 40%;
     height:auto;
   }
 }
+@media print {
+
+  ion-content {
+      width: 21cm;
+      height: 29.7cm;
+      margin: 0;
+      box-shadow: 0;
+      overflow: hidden;
+    }
+  }
